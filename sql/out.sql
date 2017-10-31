@@ -37,7 +37,7 @@ SET sql_log_bin=0;
 
 TRUNCATE tx_out;
 ## Load tx_out into table
-LOAD DATA INFILE '/media/tmp/dump/tx_out-0-393489.csv'
+LOAD DATA INFILE '/mnt/mysql-data/tx_out-0-492326.csv'
 INTO TABLE tx_out
 FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'
