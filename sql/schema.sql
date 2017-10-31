@@ -93,7 +93,7 @@ SET sql_log_bin=0;
 
 TRUNCATE blocks;
 ## Load blocks into table
-LOAD DATA INFILE '/media/tmp/dump/blocks-0-393489.csv'
+LOAD DATA INFILE '/mnt/mysql-data/blocks-0-492326.csv'
 INTO TABLE blocks
 FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'
@@ -106,7 +106,7 @@ COMMIT;
 
 TRUNCATE transactions;
 ## Load transactions into table
-LOAD DATA INFILE '/media/tmp/dump/transactions-0-393489.csv'
+LOAD DATA INFILE '/mnt/mysql-data/transactions-0-492326.csv'
 INTO TABLE transactions
 FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'
@@ -118,7 +118,7 @@ COMMIT;
 
 TRUNCATE tx_out;
 ## Load tx_out into table
-LOAD DATA INFILE '/media/tmp/dump/tx_out-0-393489.csv'
+LOAD DATA INFILE '/mnt/mysql-data/tx_out-0-492326.csv'
 INTO TABLE tx_out
 FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'
@@ -130,7 +130,7 @@ COMMIT;
 
 TRUNCATE tx_in;
 ## Load tx_in into table
-LOAD DATA INFILE '/media/tmp/dump/tx_in-0-393489.csv'
+LOAD DATA INFILE '/mnt/mysql-data/tx_in-0-492326.csv'
 INTO TABLE tx_in
 FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'
