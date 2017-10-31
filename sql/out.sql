@@ -47,6 +47,7 @@ SET txid = unhex(@txid),
 COMMIT;
 
 
+
 SET @@session.unique_checks = 1;
 SET @@session.foreign_key_checks = 1;
 
